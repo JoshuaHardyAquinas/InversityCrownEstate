@@ -3,9 +3,6 @@
 from openai import OpenAI
 from dotenv import load_dotenv
 
-from openai import OpenAI
-from dotenv import load_dotenv
-
 load_dotenv()
 
 client = OpenAI()
@@ -30,6 +27,6 @@ def comprehend_data(input_data):
 
     output = completion.choices[0].message.content
 
-    print(output)
+    # print(output)
 
     return output
