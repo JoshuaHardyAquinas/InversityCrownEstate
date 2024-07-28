@@ -1,6 +1,6 @@
-import fitz
-
 import fitz  # PyMuPDF
+import argparse
+import sys
 
 def load_pdf(file_path):
     try:
@@ -23,9 +23,6 @@ def load_pdf(file_path):
         print(f"An error occurred: {e}")
         return None
 
-# Example usage
-
-pdfPath = input()
-pdf_text = load_pdf(pdfPath)
+pdf_text = load_pdf("C:\Users\first\Downloads\134_3695_Summary Report.pdf")
 if pdf_text:
     print(pdf_text)
