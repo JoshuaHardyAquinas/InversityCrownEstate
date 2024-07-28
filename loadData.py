@@ -22,8 +22,9 @@ def load_pdf(file_path):
     except Exception as e:
         print(f"An error occurred: {e}")
         return None
-
-file = input()
-pdf_text = load_pdf(file)
+#get input file from terminal
+input_file = input()
+#send to function to process
+pdf_text = load_pdf(input_file)
 if pdf_text:
     print(pdf_text)
