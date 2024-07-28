@@ -23,6 +23,7 @@ def load_pdf(file_path):
         print(f"An error occurred: {e}")
         return None
 
-pdf_text = load_pdf("C:\Users\first\Downloads\134_3695_Summary Report.pdf")
+file = input()
+pdf_text = load_pdf(file)
 if pdf_text:
     print(pdf_text)
